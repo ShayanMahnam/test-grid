@@ -8,25 +8,30 @@ body{
 }
 
 .container{
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(12, 1fr);
+   gap: 2px;
+   
+}
+.container>div{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-}
-.container>div{
-    display: grid;
-    grid-template-columns: repeat(1fr, 1fr);
+    padding: 30px;
 }
 .header{
     background-color: blueviolet;
-
+    grid-column: 1/-1;
+    grid-row: 1/3;
 }
 .main{
     background-color: orange;
 
 }
 .content{
-    background-color: yellow;
+    background-color: yellowgreen;
 }
 .footer{
     background-color: brown
