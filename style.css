@@ -6,3 +6,28 @@
 body{
     background-color: aquamarine;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container>div{
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+}
+.header{
+    background-color: blueviolet;
+
+}
+.main{
+    background-color: orange;
+
+}
+.content{
+    background-color: yellow;
+}
+.footer{
+    background-color: brown
+}
