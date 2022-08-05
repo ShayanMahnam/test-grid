@@ -88,3 +88,44 @@ body{
      grid-row: 3/4;
      
  }
+
+ /* container 3 */
+
+ .container3{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 300px 100px;
+    gap: 2px;
+    padding-top: 20px;
+    grid-auto-flow: dense;
+    
+ }
+ .container3>div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     padding: 30px;
+ }
+ .header3{
+     background-color: blueviolet;
+     grid-column: 5/8;
+     
+ }
+ .main3{
+     background-color: orange;
+     grid-column: 5/7;
+     grid-row: 2/3;
+     
+ 
+ }
+ .content3{
+     background-color: yellowgreen;
+     grid-column: 7/8;
+     grid-row: 2/3;
+ }
+ .footer3{
+     background-color: brown;
+     grid-column: 5/8;
+     
+ }
