@@ -42,3 +42,42 @@ body{
     grid-column: 1/-1;
     
 }
+
+/* container2 */
+.container2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 300px 100px;
+    gap: 2px;
+    padding-top: 2px;
+    
+ }
+ .container2>div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     padding: 30px;
+     
+ }
+ .header2{
+     background-color: blueviolet;
+     grid-column: 1/-1;
+     
+ }
+ .main2{
+     background-color: orange;
+     grid-column: 1/7;
+     
+ 
+ }
+ .content2{
+     background-color: yellowgreen;
+     grid-column: 7/-1;
+     
+ }
+ .footer2{
+     background-color: brown;
+     grid-column: 1/-1;
+     
+ }
